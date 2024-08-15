@@ -58,5 +58,18 @@ function theme_setup()
 }
 add_action('after_setup_theme', 'theme_setup');
 
+// master_header
+function master_header()
+{
+    get_template_part('template-parts/header/header');
+}
+
+// Kirki class condition
+if (class_exists('Kirki')) {
+    // include_once("include/master-kirki.php");
+}
+
 // nec files
 include_once('include/common/scripts.php');
+include_once('include/master-kirki.php');
+include_once('include/template-functions.php');
