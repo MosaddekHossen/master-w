@@ -12,7 +12,7 @@
                        </button>
 
                        <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
-                           <ul class="navbar-nav">
+                           <!-- <ul class="navbar-nav">
                                <li class="nav-item">
                                    <a class="nav-link" href="index.html">Home</a>
                                </li>
@@ -55,7 +55,8 @@
                                <li class="nav-item">
                                    <a class="nav-link" href="contact.html">Contact</a>
                                </li>
-                           </ul>
+                           </ul> -->
+                           <?php master_menu(); ?>
                        </div>
                        <div class="hearer_icon d-flex">
                            <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
