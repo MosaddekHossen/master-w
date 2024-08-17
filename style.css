@@ -14,6 +14,10 @@ Text Domain: master
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
 */
 
-header.main_menu {
+header.main_menu.home_menu {
   margin-top: 32px !important;
+}
+
+.main_menu .main-menu-item ul li .nav-link {
+  padding: 10px 10px;
 }

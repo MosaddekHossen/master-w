@@ -49,7 +49,7 @@ class Master_Walker_Nav_Menu extends Walker
 		$indent = str_repeat($t, $depth);
 
 		// Default class.
-		$classes = array('submenu tp-submenu');
+		$classes = array('dropdown-menu');
 
 		/**
 		 * Filters the CSS class(es) applied to a menu list element.
@@ -142,12 +142,12 @@ class Master_Walker_Nav_Menu extends Walker
 		$classes[] = 'menu-item-' . $menu_item->ID;
 		// if we need li custom class
 		// $classes[] = 'menu-li-custom-class';
-		$classes[] = 'nav-link';
+		$classes[] = 'nav-link dropdown ';
 
 		// if html li has custom dropdown class 
-		// if($args->walker->has_children == true) {
-		//     $classes[] = 'custom-dropdown-menu-class';
-		// }
+		if ($args->walker->has_children == true) {
+			// $classes[] = 'nav-item'; //1
+		}
 
 		/**
 		 * Filters the arguments for a single nav menu item.
@@ -231,7 +231,7 @@ class Master_Walker_Nav_Menu extends Walker
 
 		$atts['aria-current'] = $menu_item->current ? 'page' : '';
 		// if need a tag class
-		// $atts['class'] = 'my-class';
+		$atts['class'] = 'nav-link dropdown-item';
 
 		/**
 		 * Filters the HTML attributes applied to a menu item's anchor element.
