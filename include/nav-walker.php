@@ -142,11 +142,11 @@ class Master_Walker_Nav_Menu extends Walker
 		$classes[] = 'menu-item-' . $menu_item->ID;
 		// if we need li custom class
 		// $classes[] = 'menu-li-custom-class';
-		$classes[] = 'nav-link dropdown ';
+		$classes[] = 'nav-link  ';
 
 		// if html li has custom dropdown class 
 		if ($args->walker->has_children == true) {
-			// $classes[] = 'nav-item'; //1
+			$classes[] = 'dropdown'; //1
 		}
 
 		/**
